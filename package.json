@@ -4,9 +4,12 @@
   "private": true,
   "proxy": "http://bis.hufs.ac.kr",
   "dependencies": {
+    "antd": "^3.20.5",
+    "grommet": "^2.7.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
