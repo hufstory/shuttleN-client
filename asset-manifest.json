@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shuttle/static/css/main.4e1fb815.chunk.css",
-    "main.js": "/shuttle/static/js/main.fbfc1ed8.chunk.js",
-    "main.js.map": "/shuttle/static/js/main.fbfc1ed8.chunk.js.map",
-    "runtime~main.js": "/shuttle/static/js/runtime~main.a84d84ac.js",
-    "runtime~main.js.map": "/shuttle/static/js/runtime~main.a84d84ac.js.map",
-    "static/css/2.93e7fcba.chunk.css": "/shuttle/static/css/2.93e7fcba.chunk.css",
-    "static/js/2.46697f10.chunk.js": "/shuttle/static/js/2.46697f10.chunk.js",
-    "static/js/2.46697f10.chunk.js.map": "/shuttle/static/js/2.46697f10.chunk.js.map",
-    "index.html": "/shuttle/index.html",
-    "precache-manifest.8cac443766e638d6cf62fefe8139fdaa.js": "/shuttle/precache-manifest.8cac443766e638d6cf62fefe8139fdaa.js",
-    "service-worker.js": "/shuttle/service-worker.js",
-    "static/css/2.93e7fcba.chunk.css.map": "/shuttle/static/css/2.93e7fcba.chunk.css.map",
-    "static/css/main.4e1fb815.chunk.css.map": "/shuttle/static/css/main.4e1fb815.chunk.css.map"
+    "main.css": "/shuttleTest/static/css/main.1d895fb4.chunk.css",
+    "main.js": "/shuttleTest/static/js/main.7693bd60.chunk.js",
+    "main.js.map": "/shuttleTest/static/js/main.7693bd60.chunk.js.map",
+    "runtime~main.js": "/shuttleTest/static/js/runtime~main.d647cc69.js",
+    "runtime~main.js.map": "/shuttleTest/static/js/runtime~main.d647cc69.js.map",
+    "static/css/2.95b19777.chunk.css": "/shuttleTest/static/css/2.95b19777.chunk.css",
+    "static/js/2.cf41ffbe.chunk.js": "/shuttleTest/static/js/2.cf41ffbe.chunk.js",
+    "static/js/2.cf41ffbe.chunk.js.map": "/shuttleTest/static/js/2.cf41ffbe.chunk.js.map",
+    "index.html": "/shuttleTest/index.html",
+    "precache-manifest.97f88e8f5cda0834e2fdcbf32171085f.js": "/shuttleTest/precache-manifest.97f88e8f5cda0834e2fdcbf32171085f.js",
+    "service-worker.js": "/shuttleTest/service-worker.js",
+    "static/css/2.95b19777.chunk.css.map": "/shuttleTest/static/css/2.95b19777.chunk.css.map",
+    "static/css/main.1d895fb4.chunk.css.map": "/shuttleTest/static/css/main.1d895fb4.chunk.css.map"
   }
 }
