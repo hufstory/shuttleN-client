@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'rsuite/dist/styles/rsuite.min.css';
-
+import {Loader, Grid, Row} from 'rsuite';
 import BusCard from './component/Shuttle';
 import './App.css';
 
@@ -49,7 +49,12 @@ class App extends Component {
 
     return(
       <div>
-        {buses ? <BusCard data={buses}/> : "No" }
+        <Grid fluid style={{alignContent:'center'}}>
+          <Row className="show-grid">
+          {buses ? <BusCard data={buses}/> :  <Loader size="lg" content="으쌰으쌰 불러오고 있어요" /> }
+
+          </Row>
+        </Grid>
       </div>
     )
   }
