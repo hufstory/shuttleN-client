@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import {Layout, Drawer, Button, Icon} from 'antd';
+import 'rsuite/dist/styles/rsuite.min.css';
+
 import BusCard from './component/Shuttle';
 import './App.css';
-const {Header, Footer, Content} = Layout;
 
 class App extends Component {
 
-  state = {
+  constructor(props){
+    super(props)
+    this.state = {
+      }
   }
 
   componentDidMount() {
@@ -31,45 +34,25 @@ class App extends Component {
 
   showMenu = () => {
     this.setState({
-      visible: true
+      show: true
     });
   }
 
   onClose = () => {
     this.setState({
-      visible: false
+      show: false
     });
   }
 
-  
-
   render() {
-    const bus = this.state.buses
+    const buses = this.state.buses
 
-    return (
-        <Layout>
-          <Header>
-            <Button type="primary" onClick={this.showMenu}>더보기</Button>
-          </Header>
-          <Drawer title = "더보기" placement="left" closable = {false}
-            onClose = {this.onClose}
-            visible = {this.state.visible}>
-              <p>셔틀1</p>
-              <p>셔틀2</p>
-              <p>셔틀3</p>
-          </Drawer>
-
-          <Content>
-            {bus ? <BusCard busData={this.state}/> : <Icon type="sync" spin/>}
-          </Content>
-          
-          <Footer>
-            Footer
-          </Footer>
-        </Layout>
-          )
+    return(
+      <div>
+        {buses ? <BusCard data={buses}/> : "No" }
+      </div>
+    )
   }
-
 }
 
 export default App;

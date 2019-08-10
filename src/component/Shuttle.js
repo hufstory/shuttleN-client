@@ -1,39 +1,25 @@
 import React from 'react';
-import {Card, Steps, Row, Col} from 'antd';
+import {Timeline, Popover} from 'rsuite';
+//import {BrowserView, MobileView} from 'react-device-detect';
 import '../App.css'
-const {Step} = Steps;
 
-const BusCard = ({busData}) => {
-    console.log(busData)
-    const bus = busData.buses.map((bus_arr) => {
-      console.log(bus_arr)
+const BusCard = ({data, key}) => {
+    console.log(data)
+    const bus = data.map((bus_arr) => {
       return (
-        <div style={{ background: '#ECECEC', padding: '30px'}}>
-          <center>
-          <Card title={bus_arr.bus_number} bordered={false} style={{ width: 700}}>
-            <Row>
-              <Col span={6} push={1}>
-              <p>{bus_arr.name} </p>
-              <p>{bus_arr.is_operating}</p>
-              <p>{bus_arr.lat}</p>
-              <p>{bus_arr.lng}</p>
-              </Col>
-              <Col span={4} push={4}>
-                <Steps progressDot direction="vertical" current={1}>
-                  <Step title="외대사거리" />
-                  <Step title="모현지석묘" />
-                  <Step title="외대기숙사"/>
-                  <Step title="외대도서관"/>
-                  <Step title="학생회관"/>
-                </Steps>
-              </Col>
-            </Row>
-           
-          </Card>
-          </center>
-        </div>        
-        
-        )
+        <div style={{ height: 100, background: 'white'}} key={bus_arr.bus_number}>
+        <Popover title={bus_arr.bus_number} visible style={{width:200, padding:20}}>
+        <Timeline>
+                  <Timeline.Item>aa</Timeline.Item>
+                  <Timeline.Item>aa</Timeline.Item>
+                  <Timeline.Item>aa</Timeline.Item>
+                  <Timeline.Item>aa</Timeline.Item>
+                  <Timeline.Item>aa</Timeline.Item>
+                  <Timeline.Item>aa</Timeline.Item>
+                </Timeline>
+        </Popover>
+        </div>
+      )
     })
   
   return bus
