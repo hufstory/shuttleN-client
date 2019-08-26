@@ -38,8 +38,6 @@ const BusCard = ({data, key}) => {
         </Timeline>
                   
       )
-  
-  return bus
-}
+  }
 
 export default BusCard;
