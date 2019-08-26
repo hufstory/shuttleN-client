@@ -4,7 +4,6 @@ import 'rsuite/dist/styles/rsuite.min.css';
 import CustomHeader from './header';
 import TabMenu from './body';
 import './App.css';
-import { formatTestResults } from '@jest/test-result';
 
 class App extends Component {
 

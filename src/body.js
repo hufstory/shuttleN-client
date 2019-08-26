@@ -23,21 +23,18 @@ const TabMenu = (data) => {
             onTabClick = {(tab,index) => {}}
         >
             <div className="Content">
-                전체 내용
                 <Flex align="between" alignContent="center">
                 {data.info_data ? <BusCard data={data.info_data}/> :  <Loader size="lg" content="으쌰으쌰 불러오고 있어요" /> }
                 </Flex>
             </div>
 
             <div className="Content" >
-                상행 내용
                 <Flex align="between" alignContent="center">
                 {data.info_data ? <BusCard data={data.info_data}/> :  <Loader size="lg" content="으쌰으쌰 불러오고 있어요" /> }
                 </Flex>
             </div>
 
             <div className="Content" >
-                하행 내용
                 <Flex align="between" alignContent="center">
                 {data.info_data ? <BusCard data={data.info_data}/> :  <Loader size="lg" content="으쌰으쌰 불러오고 있어요" /> }
                 </Flex>
