@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import 'rsuite/dist/styles/rsuite.min.css';
-import {Loader, Grid, Row} from 'rsuite';
-import BusCard from './component/Shuttle';
+
+import CustomHeader from './header';
+import TabMenu from './body';
 import './App.css';
+import { formatTestResults } from '@jest/test-result';
 
 class App extends Component {
 
@@ -49,12 +51,15 @@ class App extends Component {
 
     return(
       <div>
-        <Grid fluid style={{alignContent:'center'}}>
-          <Row className="show-grid">
-          {buses ? <BusCard data={buses}/> :  <Loader size="lg" content="으쌰으쌰 불러오고 있어요" /> }
+          <CustomHeader/>
 
-          </Row>
-        </Grid>
+
+      <body>
+        <TabMenu info_data={buses}/>
+      </body>
+      <footer>
+        
+      </footer>
       </div>
     )
   }
