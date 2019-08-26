@@ -25,6 +25,8 @@ const TabMenu = (data) => {
             <div className="Content">
                 <Flex align="between" alignContent="center">
                 {data.info_data ? <BusCard data={data.info_data}/> :  <Loader size="lg" content="으쌰으쌰 불러오고 있어요" /> }
+                {data.info_data ? <BusCard data={data.info_data}/> :  <Loader size="lg" content="으쌰으쌰 불러오고 있어요" /> }
+
                 </Flex>
             </div>
 

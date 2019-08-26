@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import { NavBar, Icon, Button, Popover } from 'antd-mobile';
+import { NavBar, Icon, Popover, TabBar } from 'antd-mobile';
 import {FaLightbulb} from 'react-icons/fa';
 import "./header.css"
 
 class customHeader extends Component {
-
-  constructor(props) {
-    super(props);
-  }
 
   state = {
     visible: false,
@@ -35,6 +31,7 @@ class customHeader extends Component {
       theme: !(this.state.theme)
     })
   }
+
   componentWillUpdate() {
     this.render()
   }
