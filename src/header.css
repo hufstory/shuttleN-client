@@ -1,3 +1,6 @@
-A_B {
-    color: black;
+.icon:hover {
+  color: #670;
 }
+
+.icon:active {
+    color:#650;

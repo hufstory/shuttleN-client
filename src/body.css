@@ -1,0 +1,11 @@
+.Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.TabHeight{
+    height: 1500;
+}
